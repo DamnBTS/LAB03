@@ -19,12 +19,9 @@ public class Sorter {
             arr[i] = temp;
         }
     }
-<<<<<<< HEAD
-    void insertionSort(int arr[])
-=======
+
 
     public static void InsertionSort(int arr[])
->>>>>>> fb7de53f81d013ed01cca1ffea063328018ab75d
     {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
@@ -37,8 +34,6 @@ public class Sorter {
             arr[j + 1] = key;
         }
     }
-<<<<<<< HEAD
-=======
  
     public static void sort(int arr[]){
         Scanner scanner = new Scanner(System.in());
@@ -71,7 +66,6 @@ public class Sorter {
         }
         else
             System.out.println("invalid input");
->>>>>>> fb7de53f81d013ed01cca1ffea063328018ab75d
     }
  
 }
