@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class Sorter {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
+        int[] numbers= {4,5,6,98,3,2,0,87};
+        sort(numbers);
+
+
     }
 
     public static void selectionSort(int[] arr){
@@ -36,7 +40,7 @@ public class Sorter {
     }
  
     public static void sort(int arr[]){
-        Scanner scanner = new Scanner(System.in());
+        Scanner scanner = new Scanner(System.in);
         System.out.println("1- Selection sort");
         System.out.println("2- Insertion sort");
         int choise = scanner.nextInt();
@@ -45,7 +49,7 @@ public class Sorter {
         System.out.println("Unsorted array: ");
         for (int i = 0; i < n; ++i)
             System.out.print(arr[i] + " ");
- 
+        System.out.println();
         System.out.println("Sorted array (Insertion sort): ");
         selectionSort(arr);
         int s = arr.length;
