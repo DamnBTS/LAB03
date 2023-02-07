@@ -2,6 +2,7 @@ public class Sorter {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
     }
+
     public void selectionSort(int[] arr){
         int n = arr.length;
         for (int i = 0; i < n-1; i++)
@@ -16,7 +17,8 @@ public class Sorter {
             arr[i] = temp;
         }
     }
-    void sort(int arr[])
+
+    public static void InsertionSort(int arr[])
     {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
@@ -34,13 +36,16 @@ public class Sorter {
         }
     }
  
-    /* A utility function to print array of size n*/
-    static void printArray(int arr[])
-    {
+    public static void sort(int arr[]){
         int n = arr.length;
+        System.out.println("Unsorted array: ");
         for (int i = 0; i < n; ++i)
             System.out.print(arr[i] + " ");
  
-        System.out.println();
+        System.out.println("Sorted array (Insertion sort): ");
+        InsertionSort(arr);
+        int s = arr.length;
+        for (int i = 0; i < s; ++i)
+            System.out.print(arr[i] + " ");
     }
 }
